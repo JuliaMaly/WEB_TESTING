@@ -2,6 +2,7 @@ const express = require('express')
 const cors = require('cors')
 
 const app = express()
+
 app.use(express.json())
 app.use(cors())
 
@@ -15,6 +16,10 @@ app.use('/products', productsRoutes)
 app.use('/orders', ordersRoutes)
 app.use('/auth', authRoutes)
 
-app.listen(3000, () => {
-    console.log('Server running on port 3000')
-})
+if (require.main === module) {
+    app.listen(3000, () => {
+        console.log('Server running on port 3000')
+    })
+}
+
+module.exports = app

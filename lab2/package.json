@@ -1,9 +1,11 @@
 {
   "name": "web",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "test": "jest --coverage",
+    "performance": "artillery run performance.yml"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +14,10 @@
   "dependencies": {
     "cors": "^2.8.6",
     "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "artillery": "^2.0.21",
+    "jest": "^30.3.0",
+    "supertest": "^7.2.2"
   }
 }
