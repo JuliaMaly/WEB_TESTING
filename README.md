@@ -1,4 +1,4 @@
-# Lab 4 – Testing and Automation
+# Laboratory 4 – Testing and Automation
 
 ## Description
 
@@ -8,7 +8,7 @@ The application is a fullstack system consisting of:
 - Backend: Node.js (Express REST API)
 - Frontend: React (Vite)
 
-Lab 4 focuses on:
+This laboratory focuses on:
 - Unit testing
 - Integration testing
 - Code coverage
